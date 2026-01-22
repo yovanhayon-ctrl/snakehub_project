@@ -67,73 +67,60 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 # ============================================
 
-# SETUP LARAVEL PROJECT DI LARAGON
+#SETUP LARAVEL PROJECT DI LARAGON
 
-# Project: SNAKEHUB_PROJECT
+#Project: SNAKEHUB_PROJECT
 
 # TAHAP 1: PERSIAPAN & CEK ENVIRONMENT
 
 
 
-# Buka Terminal Laragon (Ctrl + Alt + T)
+#Buka Terminal Laragon (Ctrl + Alt + T)
 
-# Cek versi PHP
-
+#Cek versi PHP
 php -v
 
-# Cek versi Composer
-
+#Cek versi Composer
 composer -v
 
-# Cek versi Node.js
-
+#Cek versi Node.js
 node -v
 
-# Cek versi NPM
-
+#Cek versi NPM
 npm -v
 
-# ============================================
+
 
 # TAHAP 2: MEMBUAT PROJECT LARAVEL
 
-# ============================================
-
-# Masuk ke folder root Laragon
-
+#Masuk ke folder root Laragon
 cd C:\laragon\www
 
-# Buat project Laravel baru
-
+#Buat project Laravel baru
 composer create-project laravel/laravel SNAKEHUB_PROJECT
 
-# Masuk ke folder project
-
+#Masuk ke folder project
 cd SNAKEHUB_PROJECT
 
-# ============================================
 
 # TAHAP 3: KONFIGURASI ENVIRONMENT
 
-# ============================================
-
-# Generate application key
-
+#Generate application key
 php artisan key:generate
 
-# Copy file .env (jika belum ada)
+#Copy file .env (jika belum ada)
 
-# copy .env.example .env
+#copy .env.example .env
 
-# Edit file .env dengan konfigurasi berikut:
+#Edit file .env dengan konfigurasi berikut:
 
-# APP_NAME="SNAKEHUB PROJECT"
+#APP_NAME="SNAKEHUB PROJECT"
 
-# APP_ENV=local
+#APP_ENV=local
 
-# APP_DEBUG=true
+#APP_DEBUG=true
 
-# APP_URL=http://snakehub-project.test
+#APP_URL=http://snakehub-project.test
 
 #
 
@@ -149,66 +136,49 @@ php artisan key:generate
 
 # DB_PASSWORD=
 
-# ============================================
 
 # TAHAP 4: MEMBUAT DATABASE
 
-# ============================================
+#Buka HeidiSQL via Laragon Menu:
 
-# Buka HeidiSQL via Laragon Menu:
+#Klik kanan icon Laragon > Database > HeidiSQL
 
-# Klik kanan icon Laragon > Database > HeidiSQL
+#Buat database baru dengan nama: snakehub_db
 
-# Buat database baru dengan nama: snakehub_db
-
-# ============================================
 
 # TAHAP 5: INSTALL LARAVEL BREEZE
 
-# ============================================
-
-# Install Breeze package
-
+#Install Breeze package
 composer require laravel/breeze --dev
 
-# Install Breeze scaffolding dengan Blade
-
+#Install Breeze scaffolding dengan Blade
 php artisan breeze:install blade
 
 # Pilihan saat install:
-
 # - Stack: blade (tekan Enter)
 
 # - Dark mode: no (atau yes)
 
 # - Testing: Pest (tekan Enter)
 
-# ============================================
 
 # TAHAP 6: INSTALL NPM DEPENDENCIES
 
-# ============================================
 
 # Install semua package Node.js
-
 npm install
 
 # Build assets untuk development
-
 npm run dev
 
 # CATATAN: Biarkan terminal ini tetap berjalan!
 
 # Buka terminal baru untuk command selanjutnya (Ctrl + Alt + T)
 
-# ============================================
 
 # TAHAP 7: MIGRASI DATABASE (Terminal Baru)
 
-# ============================================
-
 # Masuk ke folder project di terminal baru
-
 cd C:\laragon\www\SNAKEHUB_PROJECT
 
 # Jalankan migration untuk membuat tabel
