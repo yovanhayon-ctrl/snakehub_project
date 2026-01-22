@@ -71,13 +71,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 # Project: SNAKEHUB_PROJECT
 
-# ============================================
-
-# ============================================
-
 # TAHAP 1: PERSIAPAN & CEK ENVIRONMENT
 
-# ============================================
+
 
 # Buka Terminal Laragon (Ctrl + Alt + T)
 
