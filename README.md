@@ -69,45 +69,43 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 **TAHAP 1: PERSIAPAN & CEK ENVIRONMENT**
 
-* Buka Terminal Laragon (Ctrl + Alt + T)
-* Cek versi PHP
-php -v
+- Buka Terminal Laragon (Ctrl + Alt + T)
+- Cek versi PHP
+  php -v
 
-* Cek versi Composer
-composer -v
+- Cek versi Composer
+  composer -v
 
-* Cek versi Node.js
-node -v
+- Cek versi Node.js
+  node -v
 
-* Cek versi NPM
-npm -v
-
+- Cek versi NPM
+  npm -v
 
 **TAHAP 2: MEMBUAT PROJECT LARAVEL**
 
-* Masuk ke folder root Laragon
-cd C:\laragon\www
+- Masuk ke folder root Laragon
+  cd C:\laragon\www
 
-* Buat project Laravel baru
-composer create-project laravel/laravel SNAKEHUB_PROJECT
+- Buat project Laravel baru
+  composer create-project laravel/laravel SNAKEHUB_PROJECT
 
-* Masuk ke folder project
-cd SNAKEHUB_PROJECT
-
+- Masuk ke folder project
+  cd SNAKEHUB_PROJECT
 
 **TAHAP 3: KONFIGURASI ENVIRONMENT**
 
-* Generate application key
-php artisan key:generate
+- Generate application key
+  php artisan key:generate
 
-* Copy file .env (jika belum ada)
-copy .env.example .env
+- Copy file .env (jika belum ada)
+  copy .env.example .env
 
-* Edit file .env dengan konfigurasi berikut:
-APP_NAME="SNAKEHUB PROJECT"
-APP_ENV=local
-APP_DEBUG=true
-APP_URL=http://snakehub-project.test
+- Edit file .env dengan konfigurasi berikut:
+  APP_NAME="SNAKEHUB PROJECT"
+  APP_ENV=local
+  APP_DEBUG=true
+  APP_URL=http://snakehub-project.test
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -116,265 +114,250 @@ DB_DATABASE=snakehub_db
 DB_USERNAME=root
 DB_PASSWORD=
 
-
 **TAHAP 4: MEMBUAT DATABASE**
 
-* Buka HeidiSQL via Laragon Menu
-Klik kanan icon Laragon > Database > HeidiSQL
+- Buka HeidiSQL via Laragon Menu
+  Klik kanan icon Laragon > Database > HeidiSQL
 
-* Buat database baru dengan nama: snakehub_db
-Klik kanan pada koneksi > Create new > Database > Ketik: snakehub_db > OK
-
+- Buat database baru dengan nama: snakehub_db
+  Klik kanan pada koneksi > Create new > Database > Ketik: snakehub_db > OK
 
 **TAHAP 5: INSTALL LARAVEL BREEZE**
 
-* Install Breeze package
-composer require laravel/breeze --dev
+- Install Breeze package
+  composer require laravel/breeze --dev
 
-* Install Breeze scaffolding dengan Blade
-php artisan breeze:install blade
+- Install Breeze scaffolding dengan Blade
+  php artisan breeze:install blade
 
-* Pilihan saat install:
-Stack: blade (tekan Enter)
-Dark mode: no (atau yes)
-Testing: Pest (tekan Enter)
-
+- Pilihan saat install:
+  Stack: blade (tekan Enter)
+  Dark mode: no (atau yes)
+  Testing: Pest (tekan Enter)
 
 **TAHAP 6: INSTALL NPM DEPENDENCIES**
 
-* Install semua package Node.js
-npm install
+- Install semua package Node.js
+  npm install
 
-* Build assets untuk development
-npm run dev
+- Build assets untuk development
+  npm run dev
 
-* CATATAN: Biarkan terminal ini tetap berjalan!
-Buka terminal baru untuk command selanjutnya (Ctrl + Alt + T)
-
+- CATATAN: Biarkan terminal ini tetap berjalan!
+  Buka terminal baru untuk command selanjutnya (Ctrl + Alt + T)
 
 **TAHAP 7: MIGRASI DATABASE**
 
-* Masuk ke folder project di terminal baru
-cd C:\laragon\www\SNAKEHUB_PROJECT
+- Masuk ke folder project di terminal baru
+  cd C:\laragon\www\SNAKEHUB_PROJECT
 
-* Jalankan migration untuk membuat tabel
-php artisan migrate
+- Jalankan migration untuk membuat tabel
+  php artisan migrate
 
-* Jika ingin reset database dan migrate ulang
-php artisan migrate:fresh
-
+- Jika ingin reset database dan migrate ulang
+  php artisan migrate:fresh
 
 **TAHAP 8: MENJALANKAN PROJECT**
 
 **METODE 1: Menggunakan Laragon (RECOMMENDED)**
 
-* Pastikan Laragon sudah running (Start All)
-* Buka terminal (Ctrl + Alt + T)
-* Masuk ke folder project
-cd C:\laragon\www\SNAKEHUB_PROJECT
+- Pastikan Laragon sudah running (Start All)
+- Buka terminal (Ctrl + Alt + T)
+- Masuk ke folder project
+  cd C:\laragon\www\SNAKEHUB_PROJECT
 
-* Jalankan Vite untuk compile assets (Terminal 1)
-npm run dev
+- Jalankan Vite untuk compile assets (Terminal 1)
+  npm run dev
 
-* Akses di browser
-http://snakehub-project.test
+- Akses di browser
+  http://snakehub-project.test
 
-* CATATAN: Biarkan terminal npm run dev tetap berjalan!
-
+- CATATAN: Biarkan terminal npm run dev tetap berjalan!
 
 **METODE 2: Menggunakan PHP Artisan Serve**
 
-* Terminal 1 - Jalankan Laravel Server
-cd C:\laragon\www\SNAKEHUB_PROJECT
-php artisan serve
+- Terminal 1 - Jalankan Laravel Server
+  cd C:\laragon\www\SNAKEHUB_PROJECT
+  php artisan serve
 
-* Terminal 2 - Jalankan Vite (Buka terminal baru)
-cd C:\laragon\www\SNAKEHUB_PROJECT
-npm run dev
+- Terminal 2 - Jalankan Vite (Buka terminal baru)
+  cd C:\laragon\www\SNAKEHUB_PROJECT
+  npm run dev
 
-* Akses di browser:
-http://127.0.0.1:8000 atau http://localhost:8000
-
+- Akses di browser:
+  http://127.0.0.1:8000 atau http://localhost:8000
 
 **METODE 3: Custom Port untuk Artisan Serve**
 
-* Jika port 8000 sudah digunakan
-php artisan serve --port=8001
+- Jika port 8000 sudah digunakan
+  php artisan serve --port=8001
 
-* Akses di browser:
-http://127.0.0.1:8001
-
+- Akses di browser:
+  http://127.0.0.1:8001
 
 **TAHAP 9: TESTING AUTHENTICATION**
 
-* Akses halaman register di browser:
-http://snakehub-project.test/register
+- Akses halaman register di browser:
+  http://snakehub-project.test/register
 
-* Isi form registrasi:
-Name: Admin Test
-Email: admin@test.com
-Password: password123
-Confirm Password: password123
-Klik tombol Register
+- Isi form registrasi:
+  Name: Admin Test
+  Email: admin@test.com
+  Password: password123
+  Confirm Password: password123
+  Klik tombol Register
 
-* Akses halaman login di browser:
-http://snakehub-project.test/login
+- Akses halaman login di browser:
+  http://snakehub-project.test/login
 
-* Isi form login:
-Email: admin@test.com
-Password: password123
-Klik tombol Login
+- Isi form login:
+  Email: admin@test.com
+  Password: password123
+  Klik tombol Login
 
-* Akses dashboard (setelah login):
-http://snakehub-project.test/dashboard
-
+- Akses dashboard (setelah login):
+  http://snakehub-project.test/dashboard
 
 **CARA MENJALANKAN PROJECT SETELAH RESTART**
 
-* Setiap kali membuka project:
+- Setiap kali membuka project:
+
 1. Start Laragon (jika belum)
 2. Buka terminal Laragon (Ctrl + Alt + T)
 
 cd C:\laragon\www\SNAKEHUB_PROJECT
 
-* Jalankan npm dev
-npm run dev
+- Jalankan npm dev
+  npm run dev
 
-* Akses browser
-http://snakehub-project.test
-
+- Akses browser
+  http://snakehub-project.test
 
 **CARA STOP/MATIKAN PROJECT**
 
-* Stop npm run dev
-Tekan: Ctrl + C di terminal yang menjalankan npm run dev
+- Stop npm run dev
+  Tekan: Ctrl + C di terminal yang menjalankan npm run dev
 
-* Stop php artisan serve (jika menggunakan)
-Tekan: Ctrl + C di terminal yang menjalankan php artisan serve
+- Stop php artisan serve (jika menggunakan)
+  Tekan: Ctrl + C di terminal yang menjalankan php artisan serve
 
-* Stop Laragon
-Klik kanan icon Laragon > Stop All
-
+- Stop Laragon
+  Klik kanan icon Laragon > Stop All
 
 **WORKFLOW DEVELOPMENT HARIAN**
 
-* Langkah 1: Start Laragon
-Klik Start All di Laragon
+- Langkah 1: Start Laragon
+  Klik Start All di Laragon
 
-* Langkah 2: Buka Terminal (Ctrl + Alt + T)
-cd C:\laragon\www\SNAKEHUB_PROJECT
+- Langkah 2: Buka Terminal (Ctrl + Alt + T)
+  cd C:\laragon\www\SNAKEHUB_PROJECT
 
-* Langkah 3: Run Vite Dev Server
-npm run dev
-(Biarkan terminal ini tetap berjalan)
+- Langkah 3: Run Vite Dev Server
+  npm run dev
+  (Biarkan terminal ini tetap berjalan)
 
-* Langkah 4: Buka Browser
-http://snakehub-project.test
+- Langkah 4: Buka Browser
+  http://snakehub-project.test
 
-* Langkah 5: Coding di VS Code
-Klik kanan icon Laragon > Quick app > Code
+- Langkah 5: Coding di VS Code
+  Klik kanan icon Laragon > Quick app > Code
 
-* Langkah 6: Testing
-Buat perubahan di code, refresh browser
-Hot reload otomatis dengan Vite
+- Langkah 6: Testing
+  Buat perubahan di code, refresh browser
+  Hot reload otomatis dengan Vite
 
-* Langkah 7: Selesai Coding
-Tekan Ctrl + C di terminal npm run dev
-Stop Laragon atau biarkan tetap jalan
-
+- Langkah 7: Selesai Coding
+  Tekan Ctrl + C di terminal npm run dev
+  Stop Laragon atau biarkan tetap jalan
 
 **PERINTAH TAMBAHAN & HELPFUL COMMANDS**
 
-* Membuat Controller
-php artisan make:controller NamaController
+- Membuat Controller
+  php artisan make:controller NamaController
 
-* Membuat Model
-php artisan make:model NamaModel
+- Membuat Model
+  php artisan make:model NamaModel
 
-* Membuat Migration
-php artisan make:migration create_nama_table
+- Membuat Migration
+  php artisan make:migration create_nama_table
 
-* Membuat Seeder
-php artisan make:seeder NamaSeeder
+- Membuat Seeder
+  php artisan make:seeder NamaSeeder
 
-* Jalankan Seeder
-php artisan db:seed
+- Jalankan Seeder
+  php artisan db:seed
 
-* Clear cache aplikasi
-php artisan cache:clear
+- Clear cache aplikasi
+  php artisan cache:clear
 
-* Clear config cache
-php artisan config:clear
+- Clear config cache
+  php artisan config:clear
 
-* Clear route cache
-php artisan route:clear
+- Clear route cache
+  php artisan route:clear
 
-* Clear view cache
-php artisan view:clear
+- Clear view cache
+  php artisan view:clear
 
-* Optimize aplikasi
-php artisan optimize
+- Optimize aplikasi
+  php artisan optimize
 
-* Rollback migration terakhir
-php artisan migrate:rollback
+- Rollback migration terakhir
+  php artisan migrate:rollback
 
-* Rollback semua migration
-php artisan migrate:reset
+- Rollback semua migration
+  php artisan migrate:reset
 
-* Build assets untuk production
-npm run build
+- Build assets untuk production
+  npm run build
 
-* List semua routes
-php artisan route:list
+- List semua routes
+  php artisan route:list
 
-* Tinker (REPL untuk testing code)
-php artisan tinker
-
+- Tinker (REPL untuk testing code)
+  php artisan tinker
 
 **TROUBLESHOOTING COMMANDS**
 
-* Jika ada masalah autoload
-composer dump-autoload
+- Jika ada masalah autoload
+  composer dump-autoload
 
-* Clear semua cache sekaligus
-php artisan optimize:clear
+- Clear semua cache sekaligus
+  php artisan optimize:clear
 
-* Recreate storage link
-php artisan storage:link
+- Recreate storage link
+  php artisan storage:link
 
-* Check environment
-php artisan about
+- Check environment
+  php artisan about
 
-* Clear NPM cache
-npm cache clean --force
+- Clear NPM cache
+  npm cache clean --force
 
-* Reinstall NPM packages
-rm -rf node_modules
-npm install
-
+- Reinstall NPM packages
+  rm -rf node_modules
+  npm install
 
 **STRUKTUR FOLDER PENTING**
 
-app/Http/Controllers/     - Controllers
-app/Models/               - Models
-database/migrations/      - Migration files
-resources/views/          - Blade templates
-resources/views/auth/     - Login & Register views
-routes/web.php            - Web routes
-routes/auth.php           - Auth routes (dari Breeze)
-public/                   - Public assets
-storage/                  - Storage files
-.env                      - Environment config
-
+app/Http/Controllers/ - Controllers
+app/Models/ - Models
+database/migrations/ - Migration files
+resources/views/ - Blade templates
+resources/views/auth/ - Login & Register views
+routes/web.php - Web routes
+routes/auth.php - Auth routes (dari Breeze)
+public/ - Public assets
+storage/ - Storage files
+.env - Environment config
 
 **URL PENTING**
 
-Homepage:    http://snakehub-project.test
-Register:    http://snakehub-project.test/register
-Login:       http://snakehub-project.test/login
-Dashboard:   http://snakehub-project.test/dashboard
-Logout:      http://snakehub-project.test/logout (POST)
-
+Homepage: http://snakehub-project.test
+Register: http://snakehub-project.test/register
+Login: http://snakehub-project.test/login
+Dashboard: http://snakehub-project.test/dashboard
+Logout: http://snakehub-project.test/logout (POST)
 
 **CATATAN PENTING**
 
@@ -385,30 +368,43 @@ Logout:      http://snakehub-project.test/logout (POST)
 5. Database credentials default Laragon: root / (kosong)
 6. Reload Laragon jika virtual host tidak berfungsi
 
-
 **QUICK SETUP (Copy-Paste Semua)**
 
-* Setup lengkap dalam satu rangkaian command:
-cd C:\laragon\www && ^
-composer create-project laravel/laravel SNAKEHUB_PROJECT && ^
-cd SNAKEHUB_PROJECT && ^
-php artisan key:generate && ^
-composer require laravel/breeze --dev && ^
-php artisan breeze:install blade && ^
-npm install && ^
-php artisan migrate
+- Setup lengkap dalam satu rangkaian command:
+  cd C:\laragon\www && ^
+  composer create-project laravel/laravel SNAKEHUB_PROJECT && ^
+  cd SNAKEHUB_PROJECT && ^
+  php artisan key:generate && ^
+  composer require laravel/breeze --dev && ^
+  php artisan breeze:install blade && ^
+  npm install && ^
+  php artisan migrate
 
-* Setelah setup selesai, jalankan:
-npm run dev
+- Setelah setup selesai, jalankan:
+  npm run dev
 
-* Akses di browser:
-http://snakehub-project.test
-
+- Akses di browser:
+  http://snakehub-project.test
 
 **COMMAND UNTUK BUILD PRODUCTION**
 
-* Build assets untuk production (minified)
-npm run build
+- Build assets untuk production (minified)
+  npm run build
 
-* Build dan watch untuk perubahan
-npm run watch
+- Build dan watch untuk perubahan
+  npm run watch
+
+# Cara run
+
+- Di Terminal Laragon (Layar Hitam), pastikan server masih jalan. Kalau mati, ketik:
+C:\laragon\www\snakehub_project
+  php artisan serve
+
+- Di Terminal VS Code, ketik:
+  Catatan kalo di Poweshell pakai ini:
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+  npm run dev
+
+- Buka Google Chrome atau Edge, lalu akses:
+  http://127.0.0.1:8000
+  
