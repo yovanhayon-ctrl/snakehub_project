@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Bootshtrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+
+        <!-- Costum CSS -->
+        <link rel="stylesheet" href="../frontend/css/index.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white py-3">
+            <div class="container-fluid px-lg-5">
+                <a class="navbar-brand fw-bold fs-3 text-primary" href="#">
+                    <span
+                        class="bg-primary-subtle px-2 rounded-2 border border-primary"
+                        >Sneak</span
+                    >Hub
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul
+                        class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold gap-3"
+                    >
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active text-primary"
+                                href="index.htm"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"
+                                >New Arrivals</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Sale</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <form class="d-flex position-relative" role="search">
+                            <span
+                                class="position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"
+                            >
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input
+                                class="form-control rounded-pill bg-light border-0 ps-5"
+                                type="search"
+                                placeholder="Search for sneakers..."
+                                aria-label="Search"
+                                style="width: 250px"
+                            />
+                        </form>
+
+                        <a
+                            href="#"
+                            class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 40px; height: 40px"
+                        >
+                            <i class="bi bi-person fs-5"></i>
+                        </a>
+
+                        <a href="#" class="text-dark position-relative">
+                            <i class="bi bi-cart3 fs-4"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"
+                            >
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section -->
+        <section class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <!-- Column 1 -->
+                    <div class="col-lg-6 border-end pe-lg-5">
+                        <span
+                            class="badge rounded-pill bg-primary-subtle text-primary mb-3"
+                            >New Season Collection</span
+                        >
+                        <h1 class="display-3 fw-bold mb-4">
+                            Step Into
+                            <span class="text-primary d-block">Greatness</span>
+                        </h1>
+                        <p class="lead text-muted mb-5">
+                            Discover the latest collection of premium sneakers
+                            designed for performance, style, and comfort. Up to
+                            50% off on selected items.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <button
+                                class="btn btn-primary btn-lg rounded-3 px-4"
+                            >
+                                Shop Now
+                            </button>
+                            <button
+                                class="btn btn-outline-dark btn-lg rounded-3 px-4"
+                            >
+                                View Collection
+                            </button>
+                        </div>
+
+                        <hr class="my-5 border-secondary-subtle opacity-100" />
+
+                        <div class="row mt-5">
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">500+</h3>
+                                <p class="text-muted">Sneaker Models</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">50K+</h3>
+                                <p class="text-muted">Happy Costomers</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">24/7</h3>
+                                <p class="text-muted">Suport Avilable</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div
+                        class="col-lg-6 ps-lg-5 position-relative d-flex flex-column"
+                    >
+                        <div
+                            class="position-absolute top-0 end-0 bg-white p-3 rounded-4 shadow-sm m-4"
+                            style="z-index: 10"
+                        >
+                            <span class="text-muted">Limited Offer</span>
+                            <h5 class="fw-bold text-primary">50% OFF</h5>
+                        </div>
+                        <img
+                            class="rounded-5 img-fluid shadow-lg h-100 w-100 object-fit-cover"
+                            src="../frontend/img/10.jpg"
+                            alt="Hero Image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category -->
+        <div class="cat py-5 bg-light.bg-gradient">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold text-dark">Shop by Category</h2>
+                    <p class="text-muted">Find Your Perfect sneakers</p>
+                </div>
+
+                <!-- Column -->
+                <div class="container">
+                    <div class="row g-3 mt-3">
+                        <!-- C1 -->
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                            >
+                                <img
+                                    src="../frontend/img/NA.jpg"
+                                    class="card-img-top img-cover"
+                                    alt="New Shoes"
+                                />
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold mb-1">
+                                        New Arrivals
+                                    </h6>
+                                    <p class="card-text text-muted">
+                                        45 Products
+                                    </p>
+                                    <a
+                                        class="btn btn-outline-primary btn-sm mt-auto"
+                                        href="#"
+                                        >View All</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- C2 -->
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                            >
+                                <img
+                                    src="../frontend/img/1.jpg"
+                                    class="card-img-top img-cover"
+                                    alt="New Shoes"
+                                />
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold mb-1">
+                                        Best Sellers
+                                    </h6>
+                                    <p class="card-text text-muted">
+                                        20 Products
+                                    </p>
+                                    <a
+                                        class="btn btn-outline-primary btn-sm mt-auto"
+                                        href="#"
+                                        >View All</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- C3 -->
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                            >
+                                <img
+                                    src="../frontend/img/run3.jpg"
+                                    class="card-img-top img-cover"
+                                    alt="New Shoes"
+                                />
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold mb-1">
+                                        Running Shoes
+                                    </h6>
+                                    <p class="card-text text-muted">
+                                        77 Products
+                                    </p>
+                                    <a
+                                        class="btn btn-outline-primary btn-sm mt-auto"
+                                        href="#"
+                                        >View All</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- C4 -->
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                            >
+                                <img
+                                    src="../frontend/img/bola3.jpg"
+                                    class="card-img-top img-cover"
+                                    alt="New Shoes"
+                                />
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold mb-1">
+                                        Football Shoes
+                                    </h6>
+                                    <p class="card-text text-muted">
+                                        200 Products
+                                    </p>
+                                    <a
+                                        class="btn btn-outline-primary btn-sm mt-auto"
+                                        href="#"
+                                        >View All</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- C5 -->
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                            >
+                                <img
+                                    src="../frontend/img/basket1.jpg"
+                                    class="card-img-top img-cover"
+                                    alt="New Shoes"
+                                />
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold mb-1">
+                                        Basketball Shoes
+                                    </h6>
+                                    <p class="card-text text-muted">
+                                        100 Products
+                                    </p>
+                                    <a
+                                        class="btn btn-outline-primary btn-sm mt-auto"
+                                        href="#"
+                                        >View All</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- C6 -->
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div
+                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                            >
+                                <img
+                                    src="../frontend/img/casual1.jpg"
+                                    class="card-img-top img-cover"
+                                    alt="New Shoes"
+                                />
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-title fw-bold mb-1">
+                                        Casual Shoes
+                                    </h6>
+                                    <p class="card-text text-muted">
+                                        120 Products
+                                    </p>
+                                    <a
+                                        class="btn btn-outline-primary btn-sm mt-auto"
+                                        href="#"
+                                        >View All</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flash Sale -->
+        <div class="flash-section py-5">
+            <div class="container">
+                <div
+                    class="d-flex align-items-center justify-content-between flex-wrap"
+                >
+                    <!-- Left -->
+                    <div class="flash-body d-flex align-items-center gap-3">
+                        <a
+                            href="#"
+                            class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center p-0"
+                        >
+                            <i class="bi bi-fire fs-5"></i>
+                        </a>
+
+                        <div class="flash-text">
+                            <h4 class="fw-bold mb-0">Flash Sale</h4>
+                            <p class="text-muted mb-0">
+                                Limited Time offers - Don't miss out!
+                            </p>
+                        </div>
+                    </div>
+
+                <!-- Right -->
+                <div class="d-flex align-items-center gap-3 mt-3 mt-md-0">
+                    <span class="fw-semibold text-muted">Ends in:</span>
+                    <div class="time-box text-center">
+                        <button class="btn btn-light shadow-sm btn-lg time-btn">
+                            <h3 id="hours" class="text-danger fw-bold mb-0">
+                                00
+                            </h3>
+                            <small>Hours</small>
+                        </button>
+                    </div>
+                    <div class="time-box text-center">
+                        <button class="btn btn-light shadow-sm btn-lg time-btn">
+                            <h3 id="minutes" class="text-danger fw-bold mb-0">
+                                00
+                            </h3>
+                            <small>Mins</small>
+                        </button>
+                    </div>
+                    <div class="time-box text-center">
+                        <button class="btn btn-light shadow-sm btn-lg time-btn">
+                            <h3 id="seconds" class="text-danger fw-bold mb-0">
+                                00
+                            </h3>
+                            <small>Secs</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

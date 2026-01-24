@@ -1,0 +1,24 @@
+.hero-section {
+    background: linear-gradient(135deg, #c8daf7 0%, #fafafa 100%);
+}
+
+/* Category Sectio */
+.img-cover {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Flash Sale */
+.flash-section {
+    background: linear-gradient(135deg, #e6c8c8 0%, #fafafa 100%);
+}
+
+.flash-body .btn-danger {
+    width: 50px;
+    height: 50px;
+}
+
+.time-btn {
+    width: 90px;
+    height: 90px;
+}
