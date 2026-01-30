@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>ERROR TESTING</title>
 
         <!-- Bootshtrap CSS -->
         <link
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="../frontend/css/index.css" />
     </head>
     <body>
-        <!-- Navbar -->
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-white py-3">
             <div class="container-fluid px-lg-5">
                 <a class="navbar-brand fw-bold fs-3 text-primary" href="#">
@@ -106,7 +106,7 @@
             </div>
         </nav>
 
-        <!-- Section -->
+        <!-- SECTION -->
         <section class="hero-section py-5">
             <div class="container">
                 <div class="row align-items-stretch">
@@ -178,7 +178,7 @@
         </section>
 
         <!-- Category -->
-        <div class="cat py-5 bg-light.bg-gradient">
+        <div class="cat py-5 bg-light bg-gradient">
             <div class="container">
                 <div class="text-center mb-4">
                     <h2 class="fw-bold text-dark">Shop by Category</h2>
@@ -191,7 +191,7 @@
                         <!-- C1 -->
                         <div class="col-6 col-md-4 col-lg-2">
                             <div
-                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                                class="card cat-card h-100 d-flex flex-column shadow-sm border-0"
                             >
                                 <img
                                     src="../frontend/img/NA.jpg"
@@ -217,7 +217,7 @@
                         <!-- C2 -->
                         <div class="col-6 col-md-4 col-lg-2">
                             <div
-                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                                class="card cat-card h-100 d-flex flex-column shadow-sm border-0"
                             >
                                 <img
                                     src="../frontend/img/1.jpg"
@@ -243,7 +243,7 @@
                         <!-- C3 -->
                         <div class="col-6 col-md-4 col-lg-2">
                             <div
-                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                                class="card cat-card h-100 d-flex flex-column shadow-sm border-0"
                             >
                                 <img
                                     src="../frontend/img/run3.jpg"
@@ -269,7 +269,7 @@
                         <!-- C4 -->
                         <div class="col-6 col-md-4 col-lg-2">
                             <div
-                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                                class="card cat-card h-100 d-flex flex-column shadow-sm border-0"
                             >
                                 <img
                                     src="../frontend/img/bola3.jpg"
@@ -295,7 +295,7 @@
                         <!-- C5 -->
                         <div class="col-6 col-md-4 col-lg-2">
                             <div
-                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                                class="card cat-card h-100 d-flex flex-column shadow-sm border-0"
                             >
                                 <img
                                     src="../frontend/img/basket1.jpg"
@@ -321,7 +321,7 @@
                         <!-- C6 -->
                         <div class="col-6 col-md-4 col-lg-2">
                             <div
-                                class="card h-100 d-flex flex-column shadow-sm border-0"
+                                class="card cat-card h-100 d-flex flex-column shadow-sm border-0"
                             >
                                 <img
                                     src="../frontend/img/casual1.jpg"
@@ -348,66 +348,822 @@
             </div>
         </div>
 
-        <!-- Flash Sale -->
+        <!-- FLASH SALE -->
         <div class="flash-section py-5">
             <div class="container">
+                <!-- Flash Sale Header -->
                 <div
-                    class="d-flex align-items-center justify-content-between flex-wrap"
+                    class="row align-items-center justify-content-between gy-3"
                 >
-                    <!-- KIRI -->
-                    <div class="flash-body d-flex align-items-center gap-3">
-                        <a
-                            href="#"
-                            class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center p-0"
-                            style="width: 40px; height: 40px"
-                        >
-                            <i class="bi bi-fire fs-5"></i>
-                        </a>
+                    <!-- Left -->
+                    <div class="col-12 col-md-auto">
+                        <div class="flash-body d-flex align-items-center gap-3">
+                            <a
+                                href="#"
+                                class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center p-0"
+                            >
+                                <i class="bi bi-fire fs-5"></i>
+                            </a>
 
-                        <div class="flash-text">
-                            <h4 class="fw-bold mb-0">Flash Sale</h4>
+                            <div class="flash-text">
+                                <h4 class="fw-bold mb-0">Flash Sale</h4>
+                                <p class="text-muted mb-0">
+                                    Limited time offers - Don't miss out!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right (Timer) -->
+                    <div class="col-12 col-md-auto">
+                        <div class="flash-timer d-flex gap-2">
+                            <button class="btn btn-light shadow-sm time-btn">
+                                <h3 class="text-danger fw-bold mb-0">00</h3>
+                                <small>Hours</small>
+                            </button>
+                            <button class="btn btn-light shadow-sm time-btn">
+                                <h3 class="text-danger fw-bold mb-0">00</h3>
+                                <small>Mins</small>
+                            </button>
+                            <button class="btn btn-light shadow-sm time-btn">
+                                <h3 class="text-danger fw-bold mb-0">00</h3>
+                                <small>Secs</small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flash Sale Products -->
+                <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4 mt-3"
+                >
+                    <!-- Product 1 -->
+                    <div class="col">
+                        <div
+                            class="card product-card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+                        >
+                            <div class="product-media position-relative">
+                                <!-- Badges -->
+                                <div
+                                    class="product-badges position-absolute top-0 start-0 m-3 d-flex flex-column gap-2"
+                                >
+                                    <span
+                                        class="badge bg-danger rounded-pill px-3 py-2"
+                                        >-22%</span
+                                    >
+                                    <span
+                                        class="badge bg-primary rounded-pill px-3 py-2"
+                                        >New</span
+                                    >
+                                </div>
+
+                                <!-- Wishlist -->
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"
+                                >
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <!-- Image -->
+                                <img
+                                    src="../frontend/img/8.jpg"
+                                    class="img-fluid"
+                                    alt="Product"
+                                />
+
+                                <!-- Add to Cart -->
+                                <button
+                                    class="btn btn-primary w-75 position-absolute start-50 translate-middle-x bottom-0 mb-3 rounded-pill fw-semibold"
+                                >
+                                    <i class="bi bi-cart me-2"></i>Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="card-body">
+                                <small class="text-muted">Nike</small>
+                                <h5 class="fw-bold mb-2">
+                                    Air Jordan 1 Retro High OG
+                                </h5>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-2"
+                                >
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-semibold">0.0</span>
+                                    <span class="text-muted">...</span>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-3"
+                                >
+                                    <h4 class="fw-bold mb-0">Rp 2.184.000</h4>
+                                    <span
+                                        class="text-muted text-decoration-line-through"
+                                    >
+                                        Rp 2.800.000
+                                    </span>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <span class="color-dot bg-info"></span>
+                                    <span class="color-dot bg-danger"></span>
+                                    <span class="color-dot bg-primary"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col">
+                        <div
+                            class="card product-card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+                        >
+                            <div class="product-media position-relative">
+                                <!-- Badges -->
+                                <div
+                                    class="product-badges position-absolute top-0 start-0 m-3 d-flex flex-column gap-2"
+                                >
+                                    <span
+                                        class="badge bg-danger rounded-pill px-3 py-2"
+                                        >-30%</span
+                                    >
+                                    <span
+                                        class="badge bg-primary rounded-pill px-3 py-2"
+                                        >New</span
+                                    >
+                                </div>
+
+                                <!-- Wishlist -->
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"
+                                >
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <!-- Image -->
+                                <img
+                                    src="../frontend/img/bola2.jpg"
+                                    class="img-fluid"
+                                    alt="Product"
+                                />
+
+                                <!-- Add to Cart -->
+                                <button
+                                    class="btn btn-primary w-75 position-absolute start-50 translate-middle-x bottom-0 mb-3 rounded-pill fw-semibold"
+                                >
+                                    <i class="bi bi-cart me-2"></i>Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="card-body">
+                                <small class="text-muted">Nike</small>
+                                <h5 class="fw-bold mb-2">
+                                    Phantom GX II Academy MG
+                                </h5>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-2"
+                                >
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-semibold">0.0</span>
+                                    <span class="text-muted">...</span>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-3"
+                                >
+                                    <h4 class="fw-bold mb-0">Rp 1.000.000</h4>
+                                    <span
+                                        class="text-muted text-decoration-line-through"
+                                    >
+                                        Rp 1.299.000
+                                    </span>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <span class="color-dot bg-pink-500"></span>
+                                    <span class="color-dot bg-dark"></span>
+                                    <span class="color-dot bg-warning"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col">
+                        <div
+                            class="card product-card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+                        >
+                            <div class="product-media position-relative">
+                                <!-- Badges -->
+                                <div
+                                    class="product-badges position-absolute top-0 start-0 m-3 d-flex flex-column gap-2"
+                                >
+                                    <span
+                                        class="badge bg-danger rounded-pill px-3 py-2"
+                                        >-20%</span
+                                    >
+                                    <span
+                                        class="badge bg-primary rounded-pill px-3 py-2"
+                                        >New</span
+                                    >
+                                </div>
+
+                                <!-- Wishlist -->
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"
+                                >
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <!-- Image -->
+                                <img
+                                    src="../frontend/img/casual2.jpg"
+                                    class="img-fluid"
+                                    alt="Product"
+                                />
+
+                                <!-- Add to Cart -->
+                                <button
+                                    class="btn btn-primary w-75 position-absolute start-50 translate-middle-x bottom-0 mb-3 rounded-pill fw-semibold"
+                                >
+                                    <i class="bi bi-cart me-2"></i>Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="card-body">
+                                <small class="text-muted">Bottega Veneta</small>
+                                <h5 class="fw-bold mb-2">Chelsea Boots</h5>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-2"
+                                >
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-semibold">0.0</span>
+                                    <span class="text-muted">...</span>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-3"
+                                >
+                                    <h4 class="fw-bold mb-0">Rp 4.400.000</h4>
+                                    <span
+                                        class="text-muted text-decoration-line-through"
+                                    >
+                                        Rp 5.500.000
+                                    </span>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <span class="color-dot bg-dark"></span>
+                                    <span class="color-dot bg-brown"></span>
+                                    <span class="color-dot bg-maron"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col">
+                        <div
+                            class="card product-card border-0 shadow-sm rounded-4 overflow-hidden h-100"
+                        >
+                            <div class="product-media position-relative">
+                                <!-- Badges -->
+                                <div
+                                    class="product-badges position-absolute top-0 start-0 m-3 d-flex flex-column gap-2"
+                                >
+                                    <span
+                                        class="badge bg-danger rounded-pill px-3 py-2"
+                                        >-25%</span
+                                    >
+                                    <span
+                                        class="badge bg-primary rounded-pill px-3 py-2"
+                                        >New</span
+                                    >
+                                </div>
+
+                                <!-- Wishlist -->
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"
+                                >
+                                    <i class="bi bi-heart"></i>
+                                </button>
+
+                                <!-- Image -->
+                                <img
+                                    src="../frontend/img/run1.jpg"
+                                    class="img-fluid"
+                                    alt="Product"
+                                />
+
+                                <!-- Add to Cart -->
+                                <button
+                                    class="btn btn-primary w-75 position-absolute start-50 translate-middle-x bottom-0 mb-3 rounded-pill fw-semibold"
+                                >
+                                    <i class="bi bi-cart me-2"></i>Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="card-body">
+                                <small class="text-muted">Adidas</small>
+                                <h5 class="fw-bold mb-2">Yeezy 700 V3</h5>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-2"
+                                >
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-semibold">0.0</span>
+                                    <span class="text-muted">...</span>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-3"
+                                >
+                                    <h4 class="fw-bold mb-0">Rp 3.000.000</h4>
+                                    <span
+                                        class="text-muted text-decoration-line-through"
+                                    >
+                                        Rp 4.000.000
+                                    </span>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <span
+                                        class="color-dot bg-yellow-200"
+                                    ></span>
+                                    <span class="color-dot bg-slate-600"></span>
+                                    <span class="color-dot bg-dark"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 Next baru ditambahkan -->
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURED PRODUCTS -->
+        <div class="featured-section py-5">
+            <div class="container">
+                <!-- featured header -->
+                <div
+                    class="row align-items-center justify-content-between gy-3"
+                >
+                    <!-- left -->
+                    <div class="col-12 col-md-auto">
+                        <div class="featured-body">
+                            <h4 class="fw-bold mb-0">Featured Products</h4>
                             <p class="text-muted mb-0">
-                                Limited Time offers - Don't miss out!
+                                Handpicked selections just for you
                             </p>
                         </div>
                     </div>
 
-                    <!-- KANAN -->
-                    <div class="d-flex align-items-center gap-3 mt-3 mt-md-0">
-                        <span class="fw-semibold text-muted">Ends in:</span>
+                    <!-- right -->
+                    <div class="col-12 col-md-auto">
+                        <div class="featured-link d-flex gap-3">
+                            <a
+                                class="text-primary fw-bold text-decoration-none"
+                                href="#"
+                            >
+                                View All
+                            </a>
+                            <i class="bi bi-arrow-right text-primary"></i>
+                        </div>
+                    </div>
+                </div>
 
-                        <button
-                            class="btn btn-light shadow-sm btn-lg text-center"
+                <!-- Featured Card -->
+                <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4 mt-3"
+                >
+                    <!-- featured 1 -->
+                    <div class="col">
+                        <div
+                            class="card product-card border-0 shadow-sm rounded-4 overflow-hidden h-100"
                         >
-                            <h3 id="hours" class="text-danger fw-bold mb-0">
-                                22
-                            </h3>
-                            <small>Hours</small>
-                        </button>
+                            <div class="product-media position-relative">
+                                <!-- Badges -->
+                                <div
+                                    class="product-badges position-absolute top-0 start-0 m-3 d-flex flex-column gap-2"
+                                >
+                                    <span
+                                        class="badge bg-danger rounded-pill px-3 py-2"
+                                        >-22%</span
+                                    >
+                                    <span
+                                        class="badge bg-primary rounded-pill px-3 py-2"
+                                        >New</span
+                                    >
+                                </div>
 
-                        <button
-                            class="btn btn-light shadow-sm btn-lg text-center"
-                        >
-                            <h3 id="minutes" class="text-danger fw-bold mb-0">
-                                56
-                            </h3>
-                            <small>Mins</small>
-                        </button>
+                                <!-- Wishlist -->
+                                <button
+                                    class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 shadow-sm"
+                                >
+                                    <i class="bi bi-heart"></i>
+                                </button>
 
-                        <button
-                            class="btn btn-light shadow-sm btn-lg text-center"
-                        >
-                            <h3 id="seconds" class="text-danger fw-bold mb-0">
-                                56
-                            </h3>
-                            <small>Secs</small>
-                        </button>
+                                <!-- Image -->
+                                <img
+                                    src="../frontend/img/8.jpg"
+                                    class="img-fluid"
+                                    alt="Product"
+                                />
+
+                                <!-- Add to Cart -->
+                                <button
+                                    class="btn btn-primary w-75 position-absolute start-50 translate-middle-x bottom-0 mb-3 rounded-pill fw-semibold"
+                                >
+                                    <i class="bi bi-cart me-2"></i>Add to Cart
+                                </button>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="card-body">
+                                <small class="text-muted">Nike</small>
+                                <h5 class="fw-bold mb-2">
+                                    Air Jordan 1 Retro High OG
+                                </h5>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-2"
+                                >
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-semibold">0.0</span>
+                                    <span class="text-muted">...</span>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center gap-2 mb-3"
+                                >
+                                    <h4 class="fw-bold mb-0">Rp 2.184.000</h4>
+                                    <span
+                                        class="text-muted text-decoration-line-through"
+                                    >
+                                        Rp 2.800.000
+                                    </span>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <span class="color-dot bg-info"></span>
+                                    <span class="color-dot bg-danger"></span>
+                                    <span class="color-dot bg-primary"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlights Features -->
+                <div class="row mt-5 pt-4 border-top gy-4">
+                    <!-- Feature 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="highlight-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Free Shipping</h6>
+                                <p class="text-muted mb-0 small">
+                                    On orders over Rp 500.000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="highlight-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">24/7 Support</h6>
+                                <p class="text-muted mb-0 small">
+                                    Dedicated customer service
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="highlight-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Secure Payment</h6>
+                                <p class="text-muted mb-0 small">
+                                    100% protected transactions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="highlight-icon">
+                                <i class="bi bi-arrow-counterclockwise"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">30-Day Returns</h6>
+                                <p class="text-muted mb-0 small">
+                                    Easy return policy
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Footer-->
+        <!-- COMMUNITY -->
+        <div class="community-section py-5 bg-primary">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h5 class="fw-bold text-light fs-2">
+                        Join Our Sneaker Community
+                    </h5>
+                    <p class="text-light mb-0">
+                        Get exclusive access to new releases, special affers,
+                        and sneaker culture insights
+                    </p>
+                </div>
+
+                <!-- Subscribe Form -->
+                <form class="row justify-content-center mt-4 g-3">
+                    <!-- Email Input -->
+                    <div class="col-12 col-lg-5">
+                        <div
+                            class="email d-flex align-items-center rounded-3 px-2"
+                        >
+                            <input
+                                type="email"
+                                class="form-control form-control-lg px-4 bg-transparent text-light border-0 shadow-none"
+                                placeholder="Enter your email"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Subscribe Button -->
+                    <div class="col-12 col-lg-3">
+                        <button
+                            type="submit"
+                            class="btn btn-light btn-lg rounded-3 fw-semibold text-primary w-100 h-100"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Privacy Text -->
+                <p class="text-center text-white-50 small mt-4">
+                    By subscribing, you agree to our Privacy Policy and consent
+                    to receive updates.
+                </p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer py-5">
+            <div class="container">
+                <!-- head footer -->
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center gap-4 footer-head"
+                >
+                    <!-- Left -->
+                    <div class="footer-body">
+                        <h5 class="fw-bold text-light mb-0">
+                            Subscribe to our newsletter
+                        </h5>
+                        <p class="text-white-50 text-decoration-none mt-1 mb-0">
+                            Get the latest updates on new products and upcoming
+                            sales
+                        </p>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="w-100 w-lg-auto">
+                        <form
+                            class="d-flex gap-2 justify-content-start justify-content-lg-end"
+                        >
+                            <div
+                                class="position-relative flex-grow-1 flex-lg-grow-0"
+                            >
+                                <input
+                                    type="email"
+                                    class="form-control bg-dark text-light border-0 shadow-none ps-5 rounded-3 footer-email"
+                                    placeholder="Enter your email"
+                                />
+                                <i
+                                    class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary"
+                                ></i>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary fw-semibold px-4 rounded-3"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- mid footer -->
+                <div class="row g-4 mt-5 footer-mid">
+                    <!-- Kolom 1 -->
+                    <div class="col-12 col-lg-3">
+                        <h6 class="text-light fw-bold">SneakHub</h6>
+                        <p class="text-white-50 text-decoration-none">
+                            Your destination for the latest and greatest
+                            sneakers. Quality, style, and comfort guaranteed.
+                        </p>
+                        <div class="footer-icons d-flex gap-3 mt-3">
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Kolom 2 -->
+                    <div class="col-12 col-lg-3">
+                        <h6 class="text-light fw-bold">Shop</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >New Arrivals</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Best Sellers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Man's Sneakers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Women's Sneakers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Sale</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kolom 3 -->
+                    <div class="col-12 col-lg-3">
+                        <h6 class="text-light fw-bold">Support</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Contact Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >FAQs</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Shipping Info</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Returns & Exchanges</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Size Guid</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kolom 4 -->
+                    <div class="col-12 col-lg-3">
+                        <h6 class="text-light fw-bold">Commpany</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Trms of Service</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none"
+                                    >Accessibility</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- bottom footer -->
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-lg-between gap-4 mt-4"
+                >
+                    <!-- <hr class="border-secondary mt-4" /> -->
+                    <div class="copyright">
+                        <p class="text-center text-white-50 small mb-0 mt-3">
+                            &copy; 2024 SneakHub. All rights reserved.
+                        </p>
+                    </div>
+                    <div>
+                        <ul
+                            class="list-unstyled d-flex justify-content-center justify-content-lg-end gap-4 mb-0"
+                        >
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none small"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none small"
+                                    >Terms of Service</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-white-50 text-decoration-none small"
+                                    >Cookie Policy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
